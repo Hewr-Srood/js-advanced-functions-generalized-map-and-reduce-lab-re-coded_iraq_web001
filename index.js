@@ -9,7 +9,7 @@ function map(arr, callbackFunc) {
 
 function reduce(arr, callbackFunc, startgPoint) {
   let newValue = startgPoint ? startgPoint : arr[0];
-  
+
   for (let i = startgPoint ? 0 : 1; i < arr.length; i++) {
     newVal = callbackFunc(arr[i], newValue)
   }
